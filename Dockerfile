@@ -45,10 +45,6 @@ RUN tar -x -C /usr/local/bin -f /tmp/rcon-cli.tgz rcon-cli && \
 # Volumes for the external data (Server, World, Config...)
 VOLUME "/data"
 
-# Expose minecraft port
-EXPOSE 25565/tcp
-EXPOSE 25565/udp
-
 # Set memory size
 ARG memory_size=1G
 ENV MEMORYSIZE=$memory_size
